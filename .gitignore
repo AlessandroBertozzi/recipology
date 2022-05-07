@@ -1,0 +1,12 @@
+!.gitignore
+
+.idea
+templates
+app.py
+static
+venv
+documentation
+__pycache__/
+list_daily_proxy.json
+definitiveversion.owl
+definitiveversion_2.owl
