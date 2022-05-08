@@ -18,10 +18,18 @@ def cat_url(list_of_categories):
 def recipes_url(list_of_categories):
     dict_url = dict()
     for recipe in list_of_categories:
-        recipe = recipe.replace(" ", "-").replace("(", "").replace(")", "")
+        recipe = recipe[0].replace(" ", "-").replace("(", "").replace(")", "")
         dict_url[f"Recipes/{recipe}"] = f"https://www.giallozafferano.it/{recipe}.html"
 
     return dict_url
+
+
+def dict_categories(list_names_categories):
+    dict_category = dict()
+    for recipe in list_names_categories:
+        dict_category[recipe[0]] = recipe[1]
+
+    return dict_category
 
 
 def manage_quantity(quantity):
