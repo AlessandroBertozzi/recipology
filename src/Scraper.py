@@ -1,6 +1,6 @@
 from bs4 import BeautifulSoup
 from src.Connector import Connector
-from src.utility.Scraper_func import cat_url, recipes_url, manage_quantity
+from src.utility.Scraper_func import cat_url, recipes_url, manage_quantity, dict_categories
 
 
 class GZScraper:
@@ -11,7 +11,8 @@ class GZScraper:
         self.categories = self.all_recipes_category()
         self.html_catalogue = Connector(cat_url(self.categories)).data
         self.name_recipes = self.all_recipes_names()
-        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:100])).data
+        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:120])).data
+        self.cat_recipes = dict_categories(self.name_recipes)
         self.recipes_information = self.all_recipes_information()
 
     def all_recipes_category(self):
@@ -41,7 +42,7 @@ class GZScraper:
                 foo = soup.find_all("h2", {"class": "gz-title"})
                 for name in foo:
                     if name is not None and name.text not in list_recipes_names:
-                        list_recipes_names.append(name.text)
+                        list_recipes_names.append((name.text, name_page.split("/")[1].split("_")[0]))
         return list_recipes_names
 
     def all_recipes_information(self):
@@ -55,10 +56,12 @@ class GZScraper:
                 steps = soup.find_all("div", {"class": "gz-content-recipe-step"})
 
                 if title is not None:
+                    heading = title.text.strip().replace(' ', '_')
                     foo = soup.find_all("dd", {"class": "gz-ingredient"})
-                    dict_recipes_names[title.text] = {"Ingredient": []}
+                    dict_recipes_names[heading] = {"Ingredient": []}
+                    dict_recipes_names[heading]["category"] = self.cat_recipes[title.text.strip()]
                     f = 0
-                    dict_recipes_names[title.text]["Steps"] = []
+                    dict_recipes_names[heading]["Steps"] = []
                     for step in steps:
                         f = f + 1
                         try:
@@ -66,14 +69,14 @@ class GZScraper:
                         except AttributeError:
                             pass
 
-                        dict_recipes_names[title.text]["Steps"].append(step.p.text.replace(u'\xa0', u''))
+                        dict_recipes_names[heading]["Steps"].append(step.p.text.replace(u'\xa0', u''))
 
                     for el in data:
                         name_data = el.text.replace('"', '').replace(":", "").strip().split()[0]
-                        dict_recipes_names[title.text][name_data] = el.strong.text
+                        dict_recipes_names[heading][name_data] = el.strong.text
                     for name in foo:
                         if name is not None:
-                            dict_recipes_names[title.text]["Ingredient"].append(
+                            dict_recipes_names[heading]["Ingredient"].append(
                                 (name.a.text.strip(),
                                  manage_quantity(name.span.text.replace("\n", " ").replace("\t", "").strip().split())))
 

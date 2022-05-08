@@ -7,7 +7,7 @@ import requests
 
 def spys_proxy():
 
-    if not os.path.exists("./utility/list_daily_proxy.json"):
+    if not os.path.exists("./src/utility/list_daily_proxy.json"):
         proxy_website = "https://spys.me/proxy.txt"
 
         print("Scraping proxy...")
@@ -20,7 +20,7 @@ def spys_proxy():
                 proxy = proxy.split(":")
                 proxy = {"IP": proxy[0], "PORT": proxy[1]}
                 list_daily_proxy.append(proxy)
-        f = open("list_daily_proxy.json", "w")
+        f = open("./src/utility/list_daily_proxy.json", "w")
 
         print("Saving proxies list...")
 
@@ -32,7 +32,7 @@ def spys_proxy():
 
         print("Open proxies list...")
 
-        list_daily_proxy = open_json("./utility/list_daily_proxy.json")
+        list_daily_proxy = open_json("./src/utility/list_daily_proxy.json")
 
         return list_daily_proxy
 
@@ -65,7 +65,7 @@ def to_html(name_html, data_response):
 
     print(f"saving as {name_html} in /data/html/")
 
-    file = open(f"../data/html/{name_html}.html", "wb")
+    file = open(f"./data/html/{name_html}.html", "wb")
     file.write(data_response)
     file.close()
     print("Succeeded!")
@@ -86,4 +86,4 @@ def open_json(file_path, mode="read", data=None):
 
 
 if __name__ == "__main__":
-    spys_proxy()
+    pass
