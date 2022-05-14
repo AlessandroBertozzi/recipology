@@ -24,14 +24,14 @@ def main():
             create_new_class(name_recipe, find_class(onto, informations["category"]))
 
             for ingredient in informations["Ingredient"]:
-                # category = input(f'What is the category of { ingredient[0] } (insert only the number)?\n'
-                #                  '1. Cereali e derivati, tuberi\n'
-                #                  '2. Frutta e ortaggi\n'
-                #                  '3. Latte e derivati\n'
-                #                  '4. Carne, Pesci, Uova e Legumi\n'
-                #                  '5. Grassi e Oli da condimento\n').strip()
+                category = input(f'What is the category of { ingredient[0] } (insert only the number)?\n'
+                                 '1. Cereali e derivati, tuberi\n'
+                                 '2. Frutta e ortaggi\n'
+                                 '3. Latte e derivati\n'
+                                 '4. Carne, Pesci, Uova e Legumi\n'
+                                 '5. Grassi e Oli da condimento\n').strip()
                 # create_new_class(ingredient[0].replace(" ", "_"), category_ingredient[category])
-                create_new_class(ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", ""), onto.Ingredient_name)
+                # create_new_class(ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", ""), onto.Ingredient_name)
 
 
 
@@ -74,7 +74,6 @@ def create_new_class(name, upper_class):
 
 def find_class(onto, name):
     for onto_class in onto.classes():
-        # print(str(onto_class).split(".")[1].lower(), name.lower())
         if str(onto_class).split(".")[1].lower() == name.lower():
 
 
@@ -82,3 +81,10 @@ def find_class(onto, name):
             return onto_class
 
 
+
+def prova_html():
+    onto = get_ontology("./Just_food.owl").load()
+    cioa = list()
+    for i in list((onto.search(subclass_of=onto.Antipasti))):
+        cioa.append({str(i): str(list(i.hasIngredient))})
+    return cioa
