@@ -75,5 +75,5 @@ class OntoBuilder:
 
             list_ingredients = " , ".join(list_ingredients)
             list_ingredients = "[" + list_ingredients + "]"
-            print(list_ingredients)
+            # print(list_ingredients)
             name_class.is_a.append(onto.hasIngredient.only(OneOf(eval(list_ingredients))))
