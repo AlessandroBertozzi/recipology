@@ -62,7 +62,7 @@ class OntoBuilder:
             # self.class_created["selection_operation"].append(self.name_recipe)
 
 
-    def add_property(self, onto):
+    def add_property(self, onto, name_file_ontology):
 
         with onto:
             list_ingredients = list()
@@ -70,7 +70,7 @@ class OntoBuilder:
 
             for ingredient in self.information["Ingredient"]:
                 ingredient = find_class(onto, ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", ""))
-                list_ingredients.append(str(ingredient).replace("definitiveversion", "onto").strip())
+                list_ingredients.append(str(ingredient).replace(name_file_ontology, "onto").strip())
 
 
             list_ingredients = " , ".join(list_ingredients)

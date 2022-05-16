@@ -16,5 +16,5 @@ def find_class(onto, name):
             return onto_class
 
     for onto_individual in onto.individuals():
-        if str(onto_individual).split(".")[1].lower() == name.lower():
+        if str(onto_individual).split(".")[1].lower() == name.replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", "").lower():
             return onto_individual
