@@ -1,7 +1,5 @@
-from src.Scraper import GZScraper
-from src.OntologyBuilder import *
 from src.OntoBuilder import *
-from src.OntoExecutor import *
+
 
 
 
