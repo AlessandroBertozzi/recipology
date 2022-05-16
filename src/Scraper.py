@@ -11,7 +11,7 @@ class GZScraper:
         self.categories = self.all_recipes_category()
         self.html_catalogue = Connector(cat_url(self.categories)).data
         self.name_recipes = self.all_recipes_names()
-        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:200])).data
+        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:300])).data
         self.cat_recipes = dict_categories(self.name_recipes)
         self.recipes_information = self.all_recipes_information()
 
