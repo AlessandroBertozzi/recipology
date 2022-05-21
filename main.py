@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # (esempio: Just_food_1.owl ---> name_ontology = Just_food
     # (esempio: Just_food_2.owl ---> name_ontology = Just_food
     # (esempio: definitiveversion.owl ---> name_ontology = definitiveversion)
-    name_ontology = "Just_food"
+    name_ontology = "definitiveversion"
 
     '''--------------------------------------------------------------------------------------'''
     '''--------------------------------------------------------------------------------------'''
