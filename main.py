@@ -14,7 +14,7 @@ if __name__ == "__main__":
     # (esempio: Just_food_1.owl ---> name_ontology = Just_food
     # (esempio: Just_food_2.owl ---> name_ontology = Just_food
     # (esempio: definitiveversion.owl ---> name_ontology = definitiveversion)
-    name_ontology = "definitiveversion"
+    name_ontology = "prova"
 
     '''--------------------------------------------------------------------------------------'''
     '''--------------------------------------------------------------------------------------'''
@@ -37,10 +37,12 @@ if __name__ == "__main__":
             i += 1
             print(f"\n{i}/{len(list_recipes)}")
             builder = OntoBuilder(onto, name, informations)
-            builder.recipe_class()
-            print(f"\n*{name.upper()}*")
-            builder.ingredient_class()
-            builder.selection_operation_class()
-            builder.add_property(onto, name_file_ontology)
-            onto.save(f"./{name_ontology}_{number_of_version + 1}.owl")
-            print("\n----------------ONTOLOGY SAVED!----------------\n")
+            if builder.recipe_individuals(onto):
+                print(f"\n*{name.upper()}*")
+                builder.ingredient_class()
+                # builder.selection_operation_class()
+                builder.selection_operation_individuals(onto, name_file_ontology)
+                builder.add_property(onto, name_file_ontology)
+                onto.save(f"./{name_ontology}_{number_of_version + 1}.owl")
+                print("\n----------------ONTOLOGY SAVED!----------------\n")
+                # break

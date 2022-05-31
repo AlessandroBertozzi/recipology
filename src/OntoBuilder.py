@@ -6,7 +6,8 @@ class OntoBuilder:
     def __init__(self, onto, name, informations):
         self.onto = onto
         self.class_created = dict()
-        self.name_recipe = name
+        self.name_recipe = name.replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®",
+                                                                                                               "")
         self.information = informations
         self.category_ingredient = {
             "1": onto.Ingredient_group_1,
@@ -18,18 +19,17 @@ class OntoBuilder:
             "7": onto.Condiment,
         }
 
-    def recipe_class(self):
-        # self.class_created["recipes"] = list()
+    def recipe_individuals(self, onto):
 
-        if find_class(self.onto, self.name_recipe) is None:
-
-            create_new_class(self.name_recipe, find_class(self.onto, self.information["category"]))
-
-            # self.class_created["recipes"].append(self.name_recipe)
+        with onto:
+            if find_class(self.onto, self.name_recipe) is None:
+                one_selection_operation = find_class(self.onto, self.information["category"])(self.name_recipe)
+                return True
+            return False
 
     def ingredient_class(self):
 
-        find_class(self.onto, self.information["category"])
+        # find_class(self.onto, self.information["category"])
 
         for ingredient in self.information["Ingredient"]:
 
@@ -44,34 +44,51 @@ class OntoBuilder:
                                  '7. Condimenti\n\n'
                                  'insert only the number ----> ').strip()
 
-                self.category_ingredient[category](ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", ""))
+                self.category_ingredient[category](
+                    ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®",
+                                                                                                                 ""))
 
-
-    def selection_operation_class(self):
+    def selection_operation_individuals(self, onto, name_file_ontology):
 
         # self.class_created["selection_operation"] = list()
+        with onto:
+            # selection_operation_name = find_class(self.onto, f"Selection_operation")
+            # selection_operation_name = f"onto.{str(selection_operation_name.name)}"
+            recipe_name = find_class(self.onto, f"{self.name_recipe}")
 
-        if find_class(self.onto, "Selection_name") is None:
+            list_selection_operation = list()
+            for ingredient in self.information["Ingredient"]:
+                one_selection_operation = onto.Selection_operation()
+                ingredient_name = find_class(onto,
+                                             ingredient[0].replace(" ", "_").replace("'", "_").replace("(",
+                                                                                                       "_").replace(
+                                                 ")", "").replace("®", ""))
+                one_selection_operation.hasIngredient = [ingredient_name]
+                one_selection_operation.hasQuantity = [ingredient[1]]
 
-            create_new_class(f"Selection_name", self.onto.SelectionOperation)
+                list_selection_operation.append(
+                    str(one_selection_operation).replace(name_file_ontology, "onto").strip())
 
-        if find_class(self.onto, f"{self.name_recipe}_selection") is None:
+                recipe_name.is_a.append(self.onto.hasSelectionOperation.value(one_selection_operation))
 
-            create_new_class(f"{self.name_recipe}_selection", self.onto.Selection_name)
 
-            # self.class_created["selection_operation"].append(self.name_recipe)
-
+        # self.class_created["selection_operation"].append(self.name_recipe)
 
     def add_property(self, onto, name_file_ontology):
 
         with onto:
             list_ingredients = list()
-            name_class = find_class(onto, f"{self.name_recipe}_selection")
+            name_class = find_class(onto, f"{self.name_recipe}")
 
             for ingredient in self.information["Ingredient"]:
-                ingredient = find_class(onto, ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")", "").replace("®", ""))
+                ingredient = find_class(onto,
+                                        ingredient[0].replace(" ", "_").replace("'", "_").replace("(", "_").replace(")",
+                                                                                                                    "").replace(
+                                            "®", ""))
                 list_ingredients.append(str(ingredient).replace(name_file_ontology, "onto").strip())
 
+                name_class.is_a.append(
+                    onto.hasIngredient.some(OneOf([eval(str(ingredient).replace(name_file_ontology, "onto"))])))
 
             list_ingredients = " , ".join(list_ingredients)
             list_ingredients = "[" + list_ingredients + "]"
