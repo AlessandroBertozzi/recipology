@@ -1,10 +1,7 @@
 import owlready2
 from owlready2 import *
 import random
-
-
-
-
+import pickle
 
 
 def query_for_selection_individuals():
@@ -57,7 +54,7 @@ def combination_category_informations_of_individuals():
 
     for recipe, category in categories.items():
 
-        recipes[recipe]["Category"] = category
+        recipes[recipe]["Category"] = [category]
 
     return recipes
 
@@ -73,12 +70,12 @@ def query_for_inferred_categories():
             }"""))
     general_dict = combination_category_informations_of_individuals()
 
-    onto_2 = get_ontology("../data/inferred_ontology/recipology_inferred.owl").load()
+    onto_2 = get_ontology("../static/recipology_inferred.owl").load()
 
     with onto_2:
         for category in recipe_inferred_categories:
-            for recipe in category[0].instances():
-                if "inferred_categories" not in general_dict[recipe.name].keys():
+            for recipe in set(category[0].instances()):
+                if "Inferred_categories" not in general_dict[recipe.name].keys():
                     general_dict[recipe.name]["Inferred_categories"] = list()
                 general_dict[recipe.name]["Inferred_categories"].append(category[0].name)
     return general_dict
@@ -95,3 +92,10 @@ def query_for_inferred_categories():
 
 if __name__ == '__main__':
     pass
+    # inferred_query = query_for_inferred_categories()
+    # normal_query = combination_category_informations_of_individuals()
+    # with open('../static/inferred_query.pickle', 'wb') as handle:
+    #     pickle.dump(inferred_query, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    # with open('../static/normal_query.pickle', 'wb') as handle:
+    #     pickle.dump(normal_query, handle, protocol=pickle.HIGHEST_PROTOCOL)
+    # # print(combination_category_informations_of_individuals())
