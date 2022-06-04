@@ -1,9 +1,8 @@
 !.gitignore
 
 .idea
-templates
-app.py
-static
+
+
 venv
 documentation
 __pycache__/
