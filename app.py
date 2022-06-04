@@ -1,11 +1,7 @@
 from flask import Flask, render_template
-from src.Scraper import GZScraper
-from src.Connector import Connector
 from src.sparql_query import *
-from flask import jsonify
 import random
 
-# from src.OntologyBuilder import prova_html
 
 app = Flask(__name__)
 
