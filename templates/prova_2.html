@@ -6,6 +6,7 @@
     <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/css_prova_2.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link rel="icon" href={{ url_for('static', filename="img/salad.png") }}>
+
 </head>
     <body>
 
@@ -14,7 +15,7 @@
           <div style="background:url(https://media.istockphoto.com/photos/vintage-cookbook-with-spices-and-herbs-on-rustic-wooden-background-picture-id1161153224?k=20&m=1161153224&s=612x612&w=0&h=dUAhyeGxsrNps3F10e28lOMadzJ8G50dJvwhdcoVJ4E=) no-repeat 0% 0%; background-size:cover; height: 150px"></div>
           <div class="recipe-card__body">
             <h1 class="recipe-card__heading">{{ name_recipe.replace("_", " ") }}</h1>
-            <h2 class="recipe-card__subhead">Crunchy around the edges, softer in the center, these oatmeal cookies feature the nutty taste and nubbly texture of oats. </h2>
+            <h2 class="recipe-card__subhead"></h2>
                   {%for ingredient in inferred_dict["Inferred_categories"]%}
 
                         <img title="{{ ingredient.replace("_", " ") }}" style="width: 60px; padding: 0 10px 20px 10px" src="{{ url_for('static', filename=image_link[ingredient]) }}">
