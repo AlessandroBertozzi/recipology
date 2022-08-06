@@ -1,0 +1,121 @@
+
+
+
+# * Display all ingredients name and quantities for each recipe
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX recipology: 	<http://www.semanticweb.org/return_name/ontologies/2022/1/recipology#>
+SELECT DISTINCT ?Recipe_label (group_concat(DISTINCT ?IngredientInfo; separator = " , ") as ?Ingredient)
+
+WHERE {
+  ?Individual a owl:NamedIndividual.
+  ?Individual recipology:hasSelectionOperation ?SelectionOperationID.
+  ?Individual rdf:type ?recipe_category.
+  ?SelectionOperationID recipology:hasQuantity ?quantity.
+  ?SelectionOperationID recipology:hasIngredient ?ingredient.
+  OPTIONAL { ?Individual rdfs:label ?Recipe_label}
+  OPTIONAL { ?ingredient rdfs:label ?Ingredient_label}
+
+  
+  BIND (CONCAT("(", ?Ingredient_label, ": ", ?quantity, ")") AS ?IngredientInfo)
+
+}
+GROUPBY ?Recipe_label
+
+
+
+
+# * Display all recipes categories
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX recipology: 	<http://www.semanticweb.org/return_name/ontologies/2022/1/recipology#>
+SELECT DISTINCT ?Recipe_label (group_concat(DISTINCT ?category_label; separator = " , ") as ?Category)
+
+WHERE {
+  ?Individual a owl:NamedIndividual.
+  ?Individual recipology:hasSelectionOperation ?SelectionOperationID.
+  ?Individual rdf:type ?recipe_category.
+  
+  OPTIONAL { ?Individual rdfs:label ?Recipe_label}
+  OPTIONAL { ?recipe_category rdfs:label ?category_label.
+  }
+  FILTER (!isBlank(?category_label))
+  
+}
+GROUPBY ?Recipe_label
+
+
+# * Display recipes categories under ByDiet class
+
+PREFIX rdf: 
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: 
+    <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: 
+        <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX recipology: 	
+            <http://www.semanticweb.org/return_name/ontologies/2022/1/recipology#>
+PREFIX recipes: 	
+            <http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#>
+SELECT DISTINCT ?Recipe_label (group_concat( ?category_label; separator = " , ") as ?categories)
+
+WHERE {
+  ?Individual rdf:type recipology:ByDiet.
+  ?Individual rdf:type ?category_diet.
+  ?category_diet rdfs:subClassOf recipology:ByDiet.
+  OPTIONAL { ?Individual rdfs:label ?Recipe_label}
+  OPTIONAL { ?category_diet rdfs:label ?category_label}
+
+  
+} GROUP BY ?Recipe_label
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?label ?description
+WHERE {
+  ?class a owl:Class.
+  OPTIONAL { ?class rdfs:label ?label}
+  OPTIONAL { ?class rdfs:comment ?description}
+  FILTER (!isBlank(?label))
+}
+
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?label ?description
+WHERE {
+  ?class a owl:ObjectProperty.
+  OPTIONAL { ?class rdfs:label ?label}
+  OPTIONAL { ?class rdfs:comment ?description}
+  FILTER (!isBlank(?label))
+}
+
+
+
+# * Filter name recipe for each ingredient type
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX recipology: 	<http://www.semanticweb.org/return_name/ontologies/2022/1/recipology#>
+SELECT DISTINCT ?Recipe_label ?Ingredient_label
+
+WHERE {
+  ?Individual a owl:NamedIndividual.
+  ?Individual recipology:hasSelectionOperation ?SelectionOperationID.
+  ?Individual rdf:type ?recipe_category.
+  ?SelectionOperationID recipology:hasQuantity ?quantity.
+  ?SelectionOperationID recipology:hasIngredient ?ingredient.
+  OPTIONAL { ?Individual rdfs:label ?Recipe_label}
+  OPTIONAL { ?ingredient rdfs:label ?Ingredient_label}
+  FILTER (regex(?Ingredient_label, "^Capperi") || regex(?Ingredient_label, "^Pasta"))
+
+}
