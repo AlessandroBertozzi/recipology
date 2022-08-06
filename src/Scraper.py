@@ -1,19 +1,26 @@
 from bs4 import BeautifulSoup
 from src.Connector import Connector
-from src.utility.Scraper_func import cat_url, recipes_url, manage_quantity, dict_categories
+from src.utility.Scraper_funcs import cat_url, recipes_url, manage_quantity, dict_categories
 
 
 class GZScraper:
 
     def __init__(self):
-
+        print("Running class for checking html main page")
         self.html_catergory = Connector({"Main_page/main_page": "https://www.giallozafferano.it/"}).data
+        print("Running class for checking htmls categories")
         self.categories = self.all_recipes_category()
         self.html_catalogue = Connector(cat_url(self.categories)).data
+        print("Running class for checking htmls recipes")
         self.name_recipes = self.all_recipes_names()
-        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:300])).data
+        self.html_catalogue_info = Connector(recipes_url(self.name_recipes[:200])).data
         self.cat_recipes = dict_categories(self.name_recipes)
         self.recipes_information = self.all_recipes_information()
+        print("Loaded recipes categories")
+        print("Loaded recipes names")
+        print("Loaded recipes categories")
+        print("Loaded all recipes informations from htmls")
+
 
     def all_recipes_category(self):
 

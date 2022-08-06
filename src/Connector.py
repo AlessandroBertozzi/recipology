@@ -1,4 +1,4 @@
-import src.utility.Connector_func as udf
+import src.utility.Connector_funcs as udf
 import os
 import time
 
@@ -16,9 +16,7 @@ class Connector:
     def exec(self):
 
         if isinstance(self.urls, dict):
-            print(f"Check list...urls")
             for i, (name_html, url) in enumerate(self.urls.items()):
-                # print(f"{i + 1}/{len(self.urls)}")
                 succeeded = False
 
                 if not os.path.exists(f"./data/html/{name_html}.html"):
