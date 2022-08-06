@@ -1,12 +1,5 @@
 !.gitignore
-
 .idea
-
-
 venv
-documentation
 __pycache__/
-list_daily_proxy.json
-data/tmp_ontology/definitiveversion.owl
-main.py
 
