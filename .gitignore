@@ -4,7 +4,4 @@ venv
 __pycache__/
 data
 test
-static
-app.py
 catalog-v001.xml
-templates
