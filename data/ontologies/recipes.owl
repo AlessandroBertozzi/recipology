@@ -1,0 +1,1540 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/return_name/ontologies/2022/1/recipology#"
+     xml:base="http://www.semanticweb.org/return_name/ontologies/2022/1/recipology"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:reci="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Antipasti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Recipes"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Courses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Contorni</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dolci</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lievitati</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piatti unici</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Primi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Primi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primi</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Recipes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Recipes">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Recipes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#ByCourse"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Secondi piatti</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Alici_marinate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Alici_marinate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alici marinate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Anelli_di_calamari_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Anelli_di_calamari_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anelli di calamari al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Anelli_di_cipolla_in_pastella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Anelli_di_cipolla_in_pastella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anelli di cipolla in pastella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Arancini_di_riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Arancini_di_riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arancini di riso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Asparagi_in_sfoglia_con_crudo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Asparagi_in_sfoglia_con_crudo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asparagi in sfoglia con crudo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Avocado_toast -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Avocado_toast">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avocado toast</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Babaganoush -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Babaganoush">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Babaganoush</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Baccalà_mantecato_alla_veneziana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Baccalà_mantecato_alla_veneziana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baccalà mantecato alla veneziana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Bocconcini_di_patate_formaggio_e_pancetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Bocconcini_di_patate_formaggio_e_pancetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bocconcini di patate formaggio e pancetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Calamarata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Calamarata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calamarata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cannelloni_ricotta_e_spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cannelloni_ricotta_e_spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cannelloni ricotta e spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Capesante_gratinate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Capesante_gratinate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capesante gratinate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Caponata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Caponata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caponata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Carciofi_alla_giudia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Carciofi_alla_giudia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carciofi alla giudia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Carpaccio_di_polpo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Carpaccio_di_polpo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carpaccio di polpo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Casatiello_napoletano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Casatiello_napoletano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Casatiello napoletano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Chips_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Chips_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chips di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cipolle_di_Tropea_caramellate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cipolle_di_Tropea_caramellate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle di Tropea caramellate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cipolline_in_agrodolce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cipolline_in_agrodolce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolline in agrodolce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cocktail_di_gamberetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cocktail_di_gamberetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cocktail di gamberetti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Corn_dog -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Corn_dog">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Corn dog</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cornetti_salati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cornetti_salati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cornetti salati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cotoletta_di_zucchine_e_scamorza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cotoletta_di_zucchine_e_scamorza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cotoletta di zucchine e scamorza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_alla_marinara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_alla_marinara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cozze alla marinara</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_alla_tarantina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_alla_tarantina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cozze alla tarantina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_gratinate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Cozze_gratinate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cozze gratinate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crescentine_o_tigelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crescentine_o_tigelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crescentine o tigelle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crocchette_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crocchette_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crocchette di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crocchette_di_patate_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Crocchette_di_patate_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Crocchette di patate al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Croque_monsieur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Croque_monsieur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Croque monsieur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Empanadas_argentine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Empanadas_argentine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Empanadas argentine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Feta_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Feta_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feta al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Fiori_di_zucca_in_pastella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Fiori_di_zucca_in_pastella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiori di zucca in pastella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_asparagi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_asparagi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flan di asparagi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_spinaci_e_taleggio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_spinaci_e_taleggio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flan di spinaci e taleggio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_zucca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Flan_di_zucca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flan di zucca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Focaccia__fügassa_alla_genovese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Focaccia__fügassa_alla_genovese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focaccia  fügassa alla genovese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Focaccia_con_pomodorini_e_origano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Focaccia_con_pomodorini_e_origano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Focaccia con pomodorini e origano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata_di_asparagi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata_di_asparagi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittata di asparagi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittata_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittata di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittatine_nella_pancetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittatine_nella_pancetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittatine nella pancetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittelle_croccanti_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittelle_croccanti_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittelle croccanti di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittelle_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frittelle_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frittelle di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frollini_al_Parmigiano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Frollini_al_Parmigiano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frollini al Parmigiano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gamberi_alla_catalana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gamberi_alla_catalana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamberi alla catalana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gamberi_in_crosta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gamberi_in_crosta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamberi in crosta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_alla_romana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_alla_romana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnocchi alla romana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_alla_sorrentina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_alla_sorrentina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnocchi alla sorrentina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocchi_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnocchi di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocco_fritto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Gnocco_fritto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gnocco fritto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Grissini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Grissini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grissini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Guacamole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Guacamole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guacamole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Hummus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Hummus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hummus</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Impepata_di_cozze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Impepata_di_cozze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Impepata di cozze</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_di_mare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_di_mare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insalata di mare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_di_polpo_prezzemolata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_di_polpo_prezzemolata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insalata di polpo prezzemolata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_russa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Insalata_russa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insalata russa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_melanzane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_melanzane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involtini di melanzane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_melanzane_alla_mediterranea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_melanzane_alla_mediterranea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involtini di melanzane alla mediterranea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_verza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_di_verza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involtini di verza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_primavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Involtini_primavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Involtini primavera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lasagne_alla_Bolognese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lasagne_alla_Bolognese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lasagne alla Bolognese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Melanzane_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Melanzane_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melanzane al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mini_calzoni_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mini_calzoni_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini calzoni al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mini_pasqualine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mini_pasqualine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mini pasqualine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mozzarella_in_carrozza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mozzarella_in_carrozza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mozzarella in carrozza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mozzarella_in_carrozza_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Mozzarella_in_carrozza_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mozzarella in carrozza al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Muffin_salati_con_piselli_e_prosciutto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Muffin_salati_con_piselli_e_prosciutto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muffin salati con piselli e prosciutto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Muffin_salati_con_ricotta_e_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Muffin_salati_con_ricotta_e_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Muffin salati con ricotta e zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Naan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Naan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Paella_de_marisco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Paella_de_marisco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paella de marisco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pane_azzimo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pane_azzimo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pane azzimo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panelle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panettone_gastronomico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panettone_gastronomico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panettone gastronomico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panzerotti__calzoni_fritti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Panzerotti__calzoni_fritti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panzerotti  calzoni fritti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_Sfoglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_Sfoglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta Sfoglia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_alla_gricia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_alla_gricia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta alla gricia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_brisè -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_brisè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta brisè</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_con_asparagi_e_pancetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pasta_con_asparagi_e_pancetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta con asparagi e pancetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Penne_al_baffo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Penne_al_baffo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penne al baffo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Peperoni_con_la_mollica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Peperoni_con_la_mollica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoni con la mollica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piadina_Romagnola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piadina_Romagnola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Piatti-unici"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Piadina Romagnola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizza_di_scarola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizza_di_scarola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizza di scarola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizza_muffin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizza_muffin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizza muffin</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzelle_fritte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzelle_fritte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzelle fritte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_di_sfoglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_di_sfoglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzette di sfoglia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzette di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_rosse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Pizzette_rosse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pizzette rosse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Plumcake_alle_verdure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Plumcake_alle_verdure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plumcake alle verdure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Plumcake_salato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Plumcake_salato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Plumcake salato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polipetti_Affogati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polipetti_Affogati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polipetti Affogati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_ceci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_ceci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di ceci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_lenticchie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_lenticchie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di lenticchie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_melanzane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_melanzane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di melanzane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_pane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_pane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di pane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_patate_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_patate_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di patate al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_pesce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_pesce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di pesce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_spinaci_e_ricotta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_spinaci_e_ricotta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di spinaci e ricotta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_tonno_e_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_tonno_e_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di tonno e patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di zucca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine_al_forno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine_al_forno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di zucchine al forno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine_e_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpette_di_zucchine_e_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpette di zucchine e patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpettine_di_tonno_e_ricotta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Polpettine_di_tonno_e_ricotta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpettine di tonno e ricotta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Quiche_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Quiche_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quiche di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_cinesi_al_vapore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_cinesi_al_vapore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ravioli cinesi al vapore</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_di_carne_giapponesi__Gyoza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_di_carne_giapponesi__Gyoza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Primi"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ravioli di carne giapponesi  Gyoza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_ricotta_e_spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Ravioli_ricotta_e_spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ravioli ricotta e spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Riso_alla_cantonese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Riso_alla_cantonese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso alla cantonese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Risotto_agli_asparagi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Risotto_agli_asparagi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risotto agli asparagi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Risotto_allo_Zafferano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Risotto_allo_Zafferano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Risotto allo Zafferano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolini_di_zucchina_in_sfoglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolini_di_zucchina_in_sfoglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotolini di zucchina in sfoglia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolini_di_zucchine_con_crudo_e_robiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolini_di_zucchine_con_crudo_e_robiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotolini di zucchine con crudo e robiola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolo_di_frittata_farcito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolo_di_frittata_farcito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotolo di frittata farcito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolo_di_mozzarella_farcito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rotolo_di_mozzarella_farcito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotolo di mozzarella farcito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rustici_leccesi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Rustici_leccesi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rustici leccesi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Salsa_cocktail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Salsa_cocktail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa cocktail</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Salvia_fritta_in_pastella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Salvia_fritta_in_pastella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salvia fritta in pastella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sautè_di_cozze_e_vongole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sautè_di_cozze_e_vongole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sautè di cozze e vongole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sbriciolata_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sbriciolata_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sbriciolata di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sbriciolata_di_patate_e_salsiccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sbriciolata_di_patate_e_salsiccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sbriciolata di patate e salsiccia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Schiacciata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Schiacciata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Lievitati"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schiacciata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Schiacciata_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Schiacciata_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Schiacciata di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sformatini_di_spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sformatini_di_spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sformatini di spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sformato_di_zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Sformato_di_zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sformato di zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_Cacio_e_Pepe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_Cacio_e_Pepe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti Cacio e Pepe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_alla_Carbonara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_alla_Carbonara">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti alla Carbonara</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_alle_vongole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spaghetti_alle_vongole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti alle vongole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spiedini_di_gamberi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Spiedini_di_gamberi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spiedini di gamberi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Strudel_con_ricotta_e_spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Strudel_con_ricotta_e_spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strudel con ricotta e spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Supplì_al_telefono -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Supplì_al_telefono">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supplì al telefono</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Supplì_mozzarella_e_pomodoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Supplì_mozzarella_e_pomodoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Supplì mozzarella e pomodoro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Taralli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Taralli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taralli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Taralli_sugna_e_pepe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Taralli_sugna_e_pepe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taralli sugna e pepe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tartare_di_salmone_con_crema_di_avocado_e_mandorle_tostate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tartare_di_salmone_con_crema_di_avocado_e_mandorle_tostate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tartare di salmone con crema di avocado e mandorle tostate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tempura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tempura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tempura</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tomino_in_crosta_di_sfoglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tomino_in_crosta_di_sfoglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomino in crosta di sfoglia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_7_vasetti_salata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_7_vasetti_salata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta 7 vasetti salata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_di_patate_e_prosciutto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_di_patate_e_prosciutto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta di patate e prosciutto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_di_zucchine_e_i_suoi_fiori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_di_zucchine_e_i_suoi_fiori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta di zucchine e i suoi fiori</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_rustica_salata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_rustica_salata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta rustica salata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_agli_spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_agli_spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta salata agli spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_ai_carciofi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_ai_carciofi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta salata ai carciofi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_di_melanzane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_di_melanzane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta salata di melanzane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_di_verdure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Torta_salata_di_verdure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Torta salata di verdure</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tortino_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tortino_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tortino di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tramezzini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Tramezzini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tramezzini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_alla_monachina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_alla_monachina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova alla monachina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_in_camicia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_in_camicia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Secondi-piatti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova in camicia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_primavera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_primavera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova primavera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_ripiene_pasquali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_ripiene_pasquali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova ripiene pasquali</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_sode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Uova_sode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova sode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Vitello_tonnato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Vitello_tonnato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Dolci"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitello tonnato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Vitello_tonnato_alla_maniera_antica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Vitello_tonnato_alla_maniera_antica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Antipasti"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitello tonnato alla maniera antica</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Zucchine_a_scapece -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Zucchine_a_scapece">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#Contorni"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchine a scapece</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#lasagna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/recipes#lasagna"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

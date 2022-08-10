@@ -1,0 +1,3390 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredient#"
+     xml:base="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredient"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients">
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_food_groups"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredients"/>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#cheesy_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#cheesy_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#energetic_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#energetic_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#ketogenic_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#ketogenic_ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#meat_or_fish_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#meat_or_fish_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#plastic_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#plastic_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#protective_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#protective_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_function"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#vegan_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#vegan_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#vegetarian_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#vegetarian_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#without_lactose_ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#without_lactose_ingredient">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_by_category"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acciughe__alici -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acciughe__alici">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acciughe  alici</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acciughe_sott_olio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acciughe_sott_olio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acciughe sott olio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_mele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_mele">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aceto di mele</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aceto di riso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_vino_bianco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aceto_di_vino_bianco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aceto di vino bianco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acqua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acqua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acqua</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acqua_gassata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Acqua_gassata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Acqua gassata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aglio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_fresco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_fresco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_in_polvere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_in_polvere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aglio in polvere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_rosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Aglio_rosso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Albumi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Albumi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Albumi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alga_kombu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alga_kombu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alga_nori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alga_nori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alloro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Alloro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alloro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Amido_di_mais__maizena -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Amido_di_mais__maizena">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amido di mais  maizena</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Amido_di_mais__maizena_senza_glutine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Amido_di_mais__maizena_senza_glutine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amido di mais  maizena senza glutine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Anelli_Siciliani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Anelli_Siciliani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Anice_stellato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Anice_stellato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Asiago -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Asiago">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asiago</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Asparagi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Asparagi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Asparagi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Astice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Astice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Avocado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Avocado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Avocado</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bacche_di_ginepro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bacche_di_ginepro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bacche di ginepro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Baguette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Baguette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Barbabietole_precotte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Barbabietole_precotte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Barbabietole precotte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Basilico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Basilico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Basilico</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bicarbonato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bicarbonato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bicarbonato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bietole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Bietole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bietole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Birra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Birra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Birra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brandy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brandy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brandy</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Broccoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Broccoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_di_carne -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_di_carne">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brodo di carne</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_di_manzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_di_manzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_vegetale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Brodo_vegetale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brodo vegetale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Burro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Burro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Burro_salato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Burro_salato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Burro salato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Caciocavallo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Caciocavallo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caciocavallo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Calamarata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Calamarata">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calamarata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Calamari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Calamari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Calamari</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cannella_in_polvere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cannella_in_polvere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cannella_in_stecche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cannella_in_stecche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capesante -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capesante">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capesante</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capperi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi_sott_aceto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi_sott_aceto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capperi sott aceto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi_sotto_sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Capperi_sotto_sale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Capperi sotto sale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Caprino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Caprino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caprino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carciofi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carciofi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carciofi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carciofi_mammole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carciofi_mammole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carciofi mammole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carne_bovina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carne_bovina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carne bovina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carne_di_suino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carne_di_suino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carote -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Carote">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Carote</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavoletti_di_Bruxelles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavoletti_di_Bruxelles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavoletti di Bruxelles</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolfiore -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolfiore">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolo_cappuccio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolo_cappuccio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cavolo cappuccio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolo_nero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cavolo_nero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ceci_precotti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ceci_precotti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ceci precotti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ceci_secchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ceci_secchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cetriolini_sottaceto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cetriolini_sottaceto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cetriolini sottaceto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Chiodi_di_garofano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Chiodi_di_garofano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chiodi di garofano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cicoria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cicoria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cicoria</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cime_di_rapa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cime_di_rapa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_bianche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_bianche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle bianche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_borettane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_borettane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle borettane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_dorate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_dorate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle dorate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_ramate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_ramate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle ramate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_rosse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_rosse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle rosse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_rosse_di_Tropea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipolle_rosse_di_Tropea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipolle rosse di Tropea</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipollotto_fresco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cipollotto_fresco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cipollotto fresco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coda_di_rospo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coda_di_rospo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Concentrato_di_pomodoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Concentrato_di_pomodoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Concentrato di pomodoro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coniglio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coniglio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coriandolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Coriandolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coriandolo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cous_cous -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cous_cous">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cozze -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cozze">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cozze</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cumino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cumino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cumino_in_polvere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Cumino_in_polvere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cumino in polvere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Curcuma_in_polvere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Curcuma_in_polvere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ditaloni_Rigati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ditaloni_Rigati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Edamer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Edamer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edamer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Emmentaler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Emmentaler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Emmentaler</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Erba_cipollina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Erba_cipollina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erba cipollina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagioli_borlotti_secchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagioli_borlotti_secchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagioli_cannellini_secchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagioli_cannellini_secchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagiolini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fagiolini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farfalle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farfalle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_0 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_0">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina 0</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_00 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_00">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina 00</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_Manitoba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_Manitoba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina Manitoba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_ceci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_ceci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina di ceci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_grano_saraceno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_grano_saraceno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_mais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_mais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina di mais</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farina_di_riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Farina di riso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Farro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fecola_di_patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fecola_di_patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fecola di patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fegatini_di_pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fegatini_di_pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fegatini di pollo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Feta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Feta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Filetto_di_salmone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Filetto_di_salmone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Filetto di salmone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Finocchietto_selvatico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Finocchietto_selvatico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiocchi_di_sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiocchi_di_sale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiocchi di sale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiordilatte -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiordilatte">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiordilatte</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiori_di_zucca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fiori_di_zucca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fiori di zucca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fontina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fontina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fontina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Formaggio_fresco_spalmabile -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Formaggio_fresco_spalmabile">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Formaggio fresco spalmabile</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Formaggio_latteria -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Formaggio_latteria">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fragole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fragole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fragole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Frutti_di_cappero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Frutti_di_cappero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Frutti di cappero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fumetto_di_crostacei -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fumetto_di_crostacei">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fumetto di crostacei</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_champignon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_champignon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_chiodini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_chiodini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_porcini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_porcini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_secchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Funghi_secchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Funghi secchi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fusi_di_pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fusi_di_pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fusilli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Fusilli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gallinella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gallinella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gamberetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gamberetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamberetti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gamberi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gamberi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gamberi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ghiaccio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ghiaccio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ghiaccio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gorgonzola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Gorgonzola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Grana_Padano_DOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Grana_Padano_DOP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Grana Padano DOP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Groviera -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Groviera">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Groviera</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Guanciale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Guanciale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Guanciale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Insalata_riccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Insalata_riccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Insalata riccia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Katsuobushi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Katsuobushi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ketchup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ketchup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ketchup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lardo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lardo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lasagne_all_uovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lasagne_all_uovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Latte_intero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Latte_intero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Latte intero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lattuga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lattuga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lattuga</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lattuga_iceberg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lattuga_iceberg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lattuga iceberg</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie_rosse_decorticate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie_rosse_decorticate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie_secche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lenticchie_secche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lenticchie secche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_di_birra_fresco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_di_birra_fresco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lievito di birra fresco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_di_birra_secco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_di_birra_secco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lievito di birra secco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_istantaneo_per_preparazioni_salate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lievito_istantaneo_per_preparazioni_salate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lievito istantaneo per preparazioni salate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Limoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Limoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Limoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Linguine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Linguine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lonza_di_maiale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Lonza_di_maiale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maggiorana -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maggiorana">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maggiorana</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maiale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maiale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maiale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maionese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Maionese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Maionese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Malto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Malto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Malto_d_orzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Malto_d_orzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Malto d orzo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mandorle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mandorle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandorle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mandorle_in_scaglie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mandorle_in_scaglie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mandorle in scaglie</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Manzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Manzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Marsala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Marsala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Marsala</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mascarpone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mascarpone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mascarpone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Melanzane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Melanzane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Melanzane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Menta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Menta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Menta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Merluzzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Merluzzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Merluzzo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mezze_Maniche_Rigate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mezze_Maniche_Rigate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mezze_Penne_Rigate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mezze_Penne_Rigate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mezze Penne Rigate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Miele -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Miele">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miele</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Miele_millefiori -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Miele_millefiori">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Miele millefiori</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mirin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mortadella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mortadella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mozzarella -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mozzarella">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mozzarella</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mozzarella_di_bufala -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Mozzarella_di_bufala">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mozzarella di bufala</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Niboshi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Niboshi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Noce_moscata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Noce_moscata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Noce moscata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Noodles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Noodles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_oliva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_oliva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di oliva</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di semi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_arachide -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_arachide">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di semi di arachide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_girasole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_girasole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di semi di girasole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_mais -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_semi_di_mais">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di semi di mais</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_sesamo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_di_sesamo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio di sesamo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_extravergine_d_oliva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olio_extravergine_d_oliva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olio extravergine d oliva</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_di_Gaeta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_di_Gaeta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive di Gaeta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_nere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_nere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive nere</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_taggiasche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_taggiasche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive taggiasche</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_verdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_verdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive verdi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_verdi_in_salamoia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Olive_verdi_in_salamoia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Olive verdi in salamoia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Orecchiette -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Orecchiette">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Origano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Origano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Origano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Orzo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Orzo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paccheri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paccheri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancarrè -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancarrè">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pancarrè</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pancetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta_affumicata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta_affumicata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pancetta affumicata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta_arrotolata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancetta_arrotolata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pancetta arrotolata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancia_di_maiale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pancia_di_maiale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pane</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_bianco_in_cassetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_bianco_in_cassetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pane bianco in cassetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_casereccio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_casereccio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_nero_ai_cereali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_nero_ai_cereali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_per_tramezzini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_per_tramezzini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pane per tramezzini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_raffermo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pane_raffermo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pane raffermo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pangrattato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pangrattato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pangrattato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Panna_fresca_liquida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Panna_fresca_liquida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panna fresca liquida</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pappardelle_all_uovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pappardelle_all_uovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paprika</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika_affumicata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika_affumicata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paprika affumicata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika_dolce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Paprika_dolce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Paprika dolce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Parmigiano_Reggiano_DOP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Parmigiano_Reggiano_DOP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parmigiano Reggiano DOP</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Passata_di_pomodoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Passata_di_pomodoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Passata di pomodoro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pasta_Mista -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pasta_Mista">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pasta_Sfoglia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pasta_Sfoglia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pasta Sfoglia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate_novelle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate_novelle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patate novelle</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate_rosse -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Patate_rosse">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Patate rosse</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pecorino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pecorino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pecorino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pecorino_romano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pecorino_romano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pecorino romano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Penne_Rigate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Penne_Rigate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Penne Rigate</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Penne_Rigate_Bio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Penne_Rigate_Bio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pennette_Rigate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pennette_Rigate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pennette_Rigate_Integrali -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pennette_Rigate_Integrali">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_bianco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_bianco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe bianco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_bianco_in_grani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_bianco_in_grani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_di_Sichuan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_di_Sichuan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe di Sichuan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_in_grani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_in_grani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_nero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_nero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe nero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_nero_in_grani -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pepe_nero_in_grani">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pepe nero in grani</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoncino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_dolce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_dolce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoncino dolce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_fresco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_fresco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoncino fresco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_secco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoncino_secco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_gialli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_gialli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoni gialli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_rossi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_rossi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peperoni rossi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_verdi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Peperoni_verdi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesce_spada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesce_spada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesto_alla_Genovese -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesto_alla_Genovese">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pesto alla Genovese</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesto_di_rucola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pesto_di_rucola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pesto di rucola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Petto_di_pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Petto_di_pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pinoli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pinoli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pinoli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pipe_Rigate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pipe_Rigate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Piselli_secchi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Piselli_secchi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Piselli_surgelati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Piselli_surgelati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pisellini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pisellini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pisellini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pollo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pollo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpa_di_pomodoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpa_di_pomodoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpa di pomodoro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpetti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Polpo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Polpo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_pelati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_pelati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodori pelati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_piccadilly -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_piccadilly">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodori piccadilly</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_ramati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_ramati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodori ramati</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_secchi_sott_olio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodori_secchi_sott_olio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodori secchi sott olio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_ciliegino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_ciliegino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodorini ciliegino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_datterini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_datterini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pomodorini datterini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_in_scatola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Pomodorini_in_scatola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Porri -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Porri">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Porri</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prezzemolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prezzemolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prezzemolo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Primosale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Primosale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Primosale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prosciutto_cotto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prosciutto_cotto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prosciutto cotto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prosciutto_crudo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Prosciutto_crudo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Prosciutto crudo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provola_affumicata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provola_affumicata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Provola affumicata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provolone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Provolone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Quinoa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Quinoa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Radicchio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Radicchio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Radicchio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ricotta_di_pecora -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ricotta_di_pecora">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ricotta_vaccina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ricotta_vaccina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ricotta vaccina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rigatoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rigatoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rigatoni</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Bomba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Bomba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Bomba</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Carnaroli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Carnaroli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Carnaroli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Ribe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_Ribe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso Ribe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_nero_Venere -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_nero_Venere">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_vialone_nano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Riso_vialone_nano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Riso vialone nano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Robiola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Robiola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Robiola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rosmarino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rosmarino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rosmarino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rucola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Rucola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rucola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salame_napoletano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salame_napoletano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salame napoletano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_affumicato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_affumicato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sale affumicato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_fino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_fino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sale fino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_grosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_grosso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sale grosso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_marino_integrale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sale_marino_integrale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salmone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salmone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salmone_affumicato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salmone_affumicato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salmone affumicato</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_Worcestershire -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_Worcestershire">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa Worcestershire</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_cocktail -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_cocktail">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa cocktail</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_di_soia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_di_soia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa di soia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_ketchup -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsa_ketchup">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsa ketchup</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsiccia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salsiccia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salsiccia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salvia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Salvia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Salvia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sarde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sarde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scalogno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scalogno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scalogno</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scamorza__provola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scamorza__provola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scamorza  provola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scamorza_affumicata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scamorza_affumicata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scamorza affumicata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scampi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scampi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scampi</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scarola__indivia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scarola__indivia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scarola  indivia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scorza_di_lime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scorza_di_lime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorza di lime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scorza_di_limone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Scorza_di_limone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Scorza di limone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sedanini_Rigati -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sedanini_Rigati">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sedano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sedano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sedano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_girasole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_girasole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi di girasole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_papavero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_papavero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi di papavero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_sesamo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_sesamo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi di sesamo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_sesamo_nero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semi_di_sesamo_nero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semi di sesamo nero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semola -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semola">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semola</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semola_di_grano_duro_rimacinata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semola_di_grano_duro_rimacinata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semola di grano duro rimacinata</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semolino -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Semolino">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Semolino</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Senape -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Senape">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Senape</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Seppie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Seppie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sfoglie_per_involtini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Sfoglie_per_involtini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sfoglie per involtini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghetti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghetti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spaghetti</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghetti_di_riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghetti_di_riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghettoni -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spaghettoni">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Speck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Speck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Speck</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spinaci -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Spinaci">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Spinaci</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Stoccafisso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Stoccafisso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stoccafisso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Strutto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Strutto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strutto</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Succo_di_lime -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Succo_di_lime">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Succo di lime</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Succo_di_limone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Succo_di_limone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Succo di limone</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tabasco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tabasco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tabasco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Taccole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Taccole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tagliatelle_all_uovo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tagliatelle_all_uovo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tahina -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tahina">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tahina</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Taleggio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Taleggio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taleggio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tamari -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tamari">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Timo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Timo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Timo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tomini -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tomini">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tomini</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno_al_naturale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno_al_naturale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tonno al naturale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno_sott_olio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tonno_sott_olio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tonno sott olio</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Triglie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Triglie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Triplo_concentrato_di_pomodoro -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Triplo_concentrato_di_pomodoro">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Triplo concentrato di pomodoro</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Trofie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Trofie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tuorli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Tuorli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tuorli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova_di_lompo__succedaneo_caviale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova_di_lompo__succedaneo_caviale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova di lompo  succedaneo caviale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova_sode -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uova_sode">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uova sode</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uva_passa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uva_passa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uvetta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Uvetta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uvetta</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Verza -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Verza">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Verza</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_bianco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_bianco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vino bianco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_bianco_secco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_bianco_secco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vino bianco secco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_di_riso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_di_riso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vino di riso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_rosso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vino_rosso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Beverage"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vino rosso</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vitello -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vitello">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vitello</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vongole -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Vongole">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vongole</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Worcestershire_sauce -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Worcestershire_sauce">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Worcestershire sauce</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Wurstel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Wurstel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wurstel</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Yogurt_bianco_naturale -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Yogurt_bianco_naturale">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yogurt bianco naturale</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Yogurt_greco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Yogurt_greco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yogurt greco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zafferano -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zafferano">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zafferano</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zafferano_in_pistilli -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zafferano_in_pistilli">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zafferano in pistilli</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zenzero_fresco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zenzero_fresco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zenzero fresco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ziti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ziti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucca -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucca">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucca</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchero -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchero">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchero</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchero_di_canna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchero_di_canna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Condiment"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchero di canna</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchine</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine_baby -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine_baby">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchine baby</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine_tonde -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Zucchine_tonde">
+        <rdf:type rdf:resource="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Zucchine tonde</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/return_name/ontologies/2022/6/recipes#lasagna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/6/recipes#lasagna"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_4"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/return_name/ontologies/2022/1/ingredients#Ingredient_group_5"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
