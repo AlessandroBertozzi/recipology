@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ name_recipe.replace("_", " ") }}</title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/css_prova_2.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="icon" href={{ url_for('static', filename="img/salad.png") }}>
+
+</head>
+    <body>
+
+
+        <div class='recipe-card'>
+          <div style="background:url(https://media.istockphoto.com/photos/vintage-cookbook-with-spices-and-herbs-on-rustic-wooden-background-picture-id1161153224?k=20&m=1161153224&s=612x612&w=0&h=dUAhyeGxsrNps3F10e28lOMadzJ8G50dJvwhdcoVJ4E=) no-repeat 0% 0%; background-size:cover; height: 150px"></div>
+          <div class="recipe-card__body">
+            <h1 class="recipe-card__heading">{{ name_recipe.replace("_", " ") }}</h1>
+            <h2 class="recipe-card__subhead"></h2>
+                  {%for ingredient in inferred_dict["Inferred_categories"]%}
+
+                        <img title="{{ ingredient.replace("_", " ") }}" style="width: 60px; padding: 0 10px 20px 10px" src="{{ url_for('static', filename=image_link[ingredient]) }}">
+
+                  {%endfor%}
+
+
+            <ul class="recipe-card__nav">
+              <li>
+                <h3 id="Ingredients_label" class="active" onclick="myFunction()">Ingredients</h3>
+              </li>
+              <li>
+                <h3  id="Categories_label" onclick="myFunction()">Categories</h3>
+              </li>
+            </ul>
+
+
+
+            <ul id="recipe-card__ingredients" class="recipe-card__ingredients">
+                {%for ingredient in inferred_dict["Ingredients"]%}
+
+                    <li>{{ingredient[0].replace("_", " ")}}: {{ingredient[1].replace("_", " ") }}</li>
+
+                {%endfor%}
+          </ul>
+          <ul id="recipe-card__categories" class="recipe-card__ingredients" style="display: none">
+                {%for category in inferred_dict["Inferred_categories"]%}
+
+                    <li style="color: limegreen; font-weight: bold">{{  category.replace("_", " ")  }}</li>
+
+                {%endfor%}
+
+                {%for category in inferred_dict["Category"]%}
+
+                    <li>{{  category.replace("_", " ")  }}</li>
+
+
+                {%endfor%}
+          </ul>
+
+        </div>
+
+        </div>
+
+    </body>
+
+<script>
+    function myFunction() {
+        if (document.getElementById("recipe-card__categories").style.display !== "") {
+
+            document.getElementById("recipe-card__categories").style.display="";
+            document.getElementById("Ingredients_label").classList.remove("active");
+            document.getElementById("recipe-card__ingredients").style.display="none";
+            document.getElementById("Categories_label").className = "active";
+}
+        else {
+            document.getElementById("recipe-card__ingredients").style.display="";
+            document.getElementById("Categories_label").classList.remove("active");
+            document.getElementById("recipe-card__categories").style.display="none";
+            document.getElementById("Ingredients_label").className = "active";
+        }
+
+}
+</script>
+</html>
