@@ -2,7 +2,5 @@
 .idea
 venv
 __pycache__/
-data/html
-data/queries
 test
 catalog-v001.xml
